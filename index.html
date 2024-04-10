@@ -4,53 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
-    <main>
-      <p>New York</p>
-      <h1>15°C</h1>
-      <p>
-        Mostly cloudy
-        <br />
-        H <strong>20°C</strong> L <strong>12°C</strong>
-      </p>
-      <div>
-        <ul>
-          <li>1000 ☁️ 12°C</li>
-          <li>1200 ☁️ 16°C</li>
-          <li>1400 ⛅️ 20°C</li>
-          <li>1600 🌤️ 24°C</li>
-          <li>1800 ⛅️ 24°C</li>
-          <li>2000 ☁️ 12°C</li>
-        </ul>
-      </div>
-      <div>
-        <p>This week</p>
-        <ul>
-          <li>Sun Mostly cloudy ☁️ H 20°C L 12°C</li>
-          <li>Mon Mostluy sunny ☀️ H 25°C L 12°C</li>
-          <li>Tue Cloudy ☁️ H 18°C L 12°C</li>
-          <li>Wed Rainy 🌧️ H 14°C L 12°C</li>
-          <li>Thu Mostly cloudy ☁️ H 20°C L 12°C</li>
-          <li>Fri Mostly cloudy ☁️ H 20°C L 12°C</li>
-        </ul>
-      </div>
-    </main>
-    <footer>
-      Built by
-      <a href="https://github.com/Gachieng" target="_blank">Georgina A</a> and
-      is open-sourced on
-      <a href="https://github.com/Gachieng/Weather-forecast-app" target="_blank"
-        >Github</a
-      >
-      hosted on
-      <a href="https://weather-app-424.netlify.app" target="_blank">Netlify</a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-bar"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-today-details">
+        <p class="weather-city">
+          New York</p>
+          
+          <h1 class="weather-temperature">15°</h1>
+       
+          <p class="weather-details">Mostly cloudy
+          <br />
+          H <strong>20°C</strong> L <strong>12°C</strong>
+        </p>
+        </div>
+        <div class="todays-forecast" >
+          <ul class="forecast-details">
+            <li> <div class="time-of-day">1000</div> <div class="weather-icon"> ☁️ </div> <div class="hour-temp">12°C</div></li>
+            <li> <div class="time-of-day">1200</div> <div class="weather-icon">☁️ </div> <div class="hour-temp">16°C</div></li>
+            <li><div class="time-of-day">1400</div><div class="weather-icon">⛅️</div> <div class="hour-temp">20°C</div></li>
+            <li><div class="time-of-day">1600</div> <div class="weather-icon">🌤️</div> <div class="hour-temp">24°C</div></li>
+            <li><div class="time-of-day">1800</div> <div class="weather-icon">⛅️</div> <div class="hour-temp">24°C</div></li>
+            <li><div class="time-of-day">2000</div> <div class="weather-icon">☁️</div> <div class="hour-temp">12°C</div> </li>
+          </ul>
+        </div>
+        <div class="this-weeks-forecast">
+          <p>This week</p>
+          <ul class="weeks-forecast-details">
+            <li>Sun Mostly cloudy ☁️ H 20°C L 12°C</li>
+            <li>Mon Mostluy sunny ☀️ H 25°C L 12°C</li>
+            <li>Tue Cloudy ☁️ H 18°C L 12°C</li>
+            <li>Wed Rainy 🌧️ H 14°C L 12°C</li>
+            <li>Thu Mostly cloudy ☁️ H 20°C L 12°C</li>
+            <li>Fri Mostly cloudy ☁️ H 20°C L 12°C</li>
+          </ul>
+        </div>
+      </main>
+      <footer>
+        Built by
+        <a href="https://github.com/Gachieng" target="_blank">Georgina A</a> ,
+        is open-sourced on
+        <a
+          href="https://github.com/Gachieng/Weather-forecast-app"
+          target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://weather-app-424.netlify.app" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
