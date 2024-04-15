@@ -47,6 +47,21 @@ main {
 }
 .weather-city {
   margin-bottom: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.main-weather {
+  display: flex;
+  justify-content: center;
+  
+}
+.main-weather-icon {
+  font-size: 40px;
+  margin-top: 16px;
+}
+.temp-unit {
+  font-size: 60px;
 }
 .weather-temperature {
   margin: 0;
