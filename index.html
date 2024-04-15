@@ -11,43 +11,69 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-bar"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
         <div class="weather-today-details">
-        <p class="weather-city">
-          New York</p>
-          
+          <p class="weather-city" id="weather-app-city">New York</p>
+
           <h1 class="weather-temperature">15°</h1>
-       
-          <p class="weather-details">Mostly cloudy
-          <br />
-          H <strong>20°C</strong> L <strong>12°C</strong>
-        </p>
+
+          <p class="weather-details">
+            Mostly cloudy
+            <br />
+            H <strong>20°C</strong> L <strong>12°C</strong>
+          </p>
         </div>
-        <div class="todays-forecast" >
+        <div class="todays-forecast">
           <ul class="forecast-details">
-            <li> <div class="time-of-day">1000</div> <div class="weather-icon"> ☁️ </div> <div class="hour-temp">12°C</div></li>
-            <li> <div class="time-of-day">1200</div> <div class="weather-icon">☁️ </div> <div class="hour-temp">16°C</div></li>
-            <li><div class="time-of-day">1400</div><div class="weather-icon">⛅️</div> <div class="hour-temp">20°C</div></li>
-            <li><div class="time-of-day">1600</div> <div class="weather-icon">🌤️</div> <div class="hour-temp">24°C</div></li>
-            <li><div class="time-of-day">1800</div> <div class="weather-icon">⛅️</div> <div class="hour-temp">24°C</div></li>
-            <li><div class="time-of-day">2000</div> <div class="weather-icon">☁️</div> <div class="hour-temp">12°C</div> </li>
+            <li>
+              <div class="day-of-week">Mon</div>
+              <div class="weather-icon">☁️</div>
+              <div class="hour-temp">12°C</div>
+            </li>
+            <li>
+              <div class="day-of-week">Tue</div>
+              <div class="weather-icon">☁️</div>
+              <div class="hour-temp">16°C</div>
+            </li>
+            <li>
+              <div class="day-of-week">Wed</div>
+              <div class="weather-icon">⛅️</div>
+              <div class="hour-temp">20°C</div>
+            </li>
+            <li>
+              <div class="day-of-week">Thu</div>
+              <div class="weather-icon">🌤️</div>
+              <div class="hour-temp">24°C</div>
+            </li>
+            <li>
+              <div class="day-of-week">Fri</div>
+              <div class="weather-icon">⛅️</div>
+              <div class="hour-temp">24°C</div>
+            </li>
+            <li>
+              <div class="day-of-week">Sat</div>
+              <div class="weather-icon">☁️</div>
+              <div class="hour-temp">12°C</div>
+            </li>
           </ul>
         </div>
-        <div class="this-weeks-forecast">
+        <!-- <div class="this-weeks-forecast">
           <p>This week</p>
           <ul class="weeks-forecast-details">
             <li>Sun Mostly cloudy ☁️ H 20°C L 12°C</li>
@@ -58,7 +84,7 @@
             <li>Fri Mostly cloudy ☁️ H 20°C L 12°C</li>
           </ul>
         </div>
-      </main>
+      --></main>
       <footer>
         Built by
         <a href="https://github.com/Gachieng" target="_blank">Georgina A</a> ,
@@ -74,5 +100,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
