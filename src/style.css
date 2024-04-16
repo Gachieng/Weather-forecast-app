@@ -56,11 +56,12 @@ main {
   justify-content: center;
 }
 .main-weather-icon {
-  font-size: 40px;
-  margin-top: 16px;
+  width: 60px;
+  height: 60px;
+  margin-top: 13px;
 }
 .temp-unit {
-  font-size: 60px;
+  font-size: 40px;
 }
 .weather-temperature {
   margin: 0;

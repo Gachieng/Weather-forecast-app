@@ -7,6 +7,8 @@ function updateWeather(response) {
   let windElement = document.querySelector("#wind-speed");
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
+  iconElement.innerHTML = ` <img src="${response.data.condition.icon_url}" class="main-weather-icon" />`;
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
@@ -46,4 +48,4 @@ function submitResults(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", submitResults);
 
-searchCity("New York");
+searchCity("Nairobi");
