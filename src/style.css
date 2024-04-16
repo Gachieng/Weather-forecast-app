@@ -61,7 +61,8 @@ main {
   margin-top: 13px;
 }
 .temp-unit {
-  font-size: 40px;
+  font-size: 20px;
+  margin-top: 8px;
 }
 .weather-temperature {
   margin: 0;
